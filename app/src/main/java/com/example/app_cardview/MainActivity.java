@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Initialize CardViews by finding them by their ID
         D1 = findViewById(R.id.card_view);
-        D2 = findViewById(R.id.d2);
-        D3 = findViewById(R.id.d3);
-        D4 = findViewById(R.id.d4);
-        D5 = findViewById(R.id.d5);
+        D2 = findViewById(R.id.context_menu);
+        D3 = findViewById(R.id.popup_menu);
+        D4 = findViewById(R.id.dialog);
+        D5 = findViewById(R.id.picker);
 
         // Set onClickListeners to handle CardView clicks
         D1.setOnClickListener(this);
@@ -45,15 +45,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Use if-else statements to check the clicked view ID
         if (v.getId() == R.id.card_view) {
-            i = new Intent(this, d1.class);
-        } else if (v.getId() == R.id.d2) {
-            i = new Intent(this, d2.class);
-        } else if (v.getId() == R.id.d3) {
-            i = new Intent(this, d3.class);
-        } else if (v.getId() == R.id.d4) {
-            i = new Intent(this, d4.class);
-        } else if (v.getId() == R.id.d5) {
-            i = new Intent(this, d5.class);
+            i = new Intent(this, AppBarActivity.class);
+        } else if (v.getId() == R.id.context_menu) {
+            i = new Intent(this, Contextual.class);
+        } else if (v.getId() == R.id.popup_menu) {
+            i = new Intent(this, PopupMenuActivity.class);
+        } else if (v.getId() == R.id.dialog) {
+            i = new Intent(this, AlertDialogActivity.class);
+        } else if (v.getId() == R.id.picker) {
+            i = new Intent(this, PickerActivity.class);
         }
 
         // If the Intent was initialized, start the activity

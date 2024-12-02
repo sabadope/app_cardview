@@ -41,11 +41,5 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- FrameLayout to hold the content, pushing it to the right slightly -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="56dp"> <!-- Adjust this to create space for the back arrow -->
-        <!-- Content (like "app_cardview") will go here -->
-    </FrameLayout>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
